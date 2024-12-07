@@ -1,0 +1,115 @@
+.chatbox {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 450px;
+    max-width: 100%;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.typing-indicator {
+    font-style: italic;
+    color: gray;
+}
+
+
+.chatbox-header {
+    background-color: #7fa1c2;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.chatbox-header-left {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.close-btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.chatbox-messages {
+    padding: 10px;
+    overflow-y: auto;
+    max-height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: flex-start;
+}
+
+.message.sent {
+    justify-content: flex-end;
+}
+
+.message-avatar {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.message-bubble {
+    padding: 10px;
+    border-radius: 20px;
+    max-width: 70%;
+}
+
+.sent-bubble {
+    background-color: #0084ff;
+    color: white;
+    border-radius: 20px 20px 0 20px;
+}
+
+.received-bubble {
+    background-color: #e4e6eb;
+    color: black;
+    border-radius: 20px 20px 20px 0;
+}
+
+.chatbox-input {
+    display: flex;
+    padding: 10px;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+    align-items: center;
+}
+
+.chatbox-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.chatbox-input button {
+    background-color: #0084ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}

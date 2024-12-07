@@ -1,0 +1,89 @@
+/* Container của chi tiết sự kiện */
+.event-details-container {
+    margin-left: 220px;
+    /* Đảm bảo không bị che khuất bởi sidebar */
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Bóng nhẹ để làm nổi bật container */
+    max-width: 800px;
+    margin: 30px auto;
+    /* Căn giữa và tạo khoảng cách xung quanh */
+}
+
+/* Tiêu đề của chi tiết sự kiện */
+.event-details-container h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    /* Căn giữa tiêu đề */
+}
+
+/* Chi tiết sự kiện: Ngày, Thời gian, Địa điểm */
+.event-details-container p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.event-details-container p strong {
+    color: #0073e6;
+    /* Màu cho các từ khóa như "Ngày", "Thời gian", "Địa điểm" */
+    font-weight: bold;
+}
+
+/* Danh sách bạn bè mời */
+.event-details-container ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.event-details-container ul li {
+    font-size: 1.1rem;
+    color: #555;
+    background-color: #f1f8ff;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 8px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hiệu ứng hover cho bạn bè mời */
+.event-details-container ul li:hover {
+    background-color: #e0f4ff;
+    /* Màu nền khi hover vào mục bạn bè */
+    transform: translateX(5px);
+    /* Di chuyển nhẹ sang phải khi hover */
+}
+
+/* Nút quay lại */
+.event-details-container .back-btn {
+    background-color: #0073e6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    display: block;
+    margin: 20px auto 0;
+}
+
+.event-details-container .back-btn:hover {
+    background-color: #005bb5;
+    transform: translateY(-2px);
+    /* Tạo hiệu ứng nhấn khi hover */
+}
+
+/* Chỉnh sửa cho button quay lại nếu có icon */
+.event-details-container .back-btn i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}

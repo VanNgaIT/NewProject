@@ -1,0 +1,168 @@
+/* MiniGameQuiz.css */
+
+/* Bố cục chính */
+.mini-game-wrapper {
+    margin-left: 250px;
+    /* Dịch sang phải tránh sidebar */
+    padding: 40px;
+    background: linear-gradient(135deg, #f6d365, #fda085);
+    /* Hiệu ứng nền gradient */
+    min-height: calc(100vh - 60px);
+    /* Trừ chiều cao của header */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    /* Font chữ hiện đại */
+}
+
+.quiz-main-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+
+}
+
+
+/* Giao diện container của quiz */
+.quiz-container,
+.quiz-result {
+    max-width: 600px;
+    width: 100%;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    /* Shadow mềm mại */
+    padding: 30px 25px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+    /* Hiệu ứng xuất hiện */
+}
+
+/* Hiệu ứng fadeIn */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Tiêu đề */
+.quiz-title {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+    border-bottom: 2px solid #fda085;
+    /* Đường viền tạo điểm nhấn */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.quiz-question {
+    font-size: 20px;
+    margin: 20px 0;
+    color: #444;
+}
+
+/* Danh sách các lựa chọn */
+.quiz-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Hai cột đều nhau */
+    gap: 20px;
+    /* Tăng khoảng cách giữa các nút */
+    justify-items: center;
+    /* Căn giữa các nút */
+}
+
+.quiz-option {
+    padding: 20px;
+    width: 200px;
+    /* Đặt kích thước chiều rộng và chiều cao đều nhau */
+    height: 80px;
+    background: linear-gradient(135deg, #007bff, #44c298);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    /* Bo tròn hoàn toàn thành hình tròn */
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.quiz-option:hover {
+    background: linear-gradient(135deg, #0056b3, #003f88);
+    transform: scale(1.1);
+    /* Phóng to nhẹ khi hover */
+}
+
+/* Kết quả */
+.quiz-finished-title {
+    font-size: 28px;
+    color: #28a745;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.quiz-score {
+    font-size: 22px;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+.quiz-restart-btn {
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #6c757d, #5a6268);
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.quiz-restart-btn:hover {
+    background: linear-gradient(135deg, #5a6268, #484e52);
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .mini-game-wrapper {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .quiz-options {
+        grid-template-columns: 1fr;
+        /* Chuyển thành một cột trên màn hình nhỏ */
+    }
+}
+
+.btn-finish {
+    padding: 10px;
+    margin: 20px;
+    background-color: #209187;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+
+}

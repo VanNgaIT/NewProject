@@ -1,0 +1,93 @@
+/* messages-list.css */
+.messages-list {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    width: 350px;
+    max-height: 500px;
+    overflow-y: auto;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    padding: 12px;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+}
+
+.messages-list h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+}
+
+.message-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #f2f2f2;
+    transition: background-color 0.2s ease;
+}
+
+.message-item:hover {
+    background-color: #f4f4f4;
+}
+
+.message-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.message-content {
+    flex-grow: 1;
+}
+
+.message-sender {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.message-text {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
+}
+
+.message-timestamp {
+    font-size: 12px;
+    color: #aaa;
+    margin-top: 4px;
+    text-align: right;
+}
+
+.message-item:last-child {
+    border-bottom: none;
+}
+
+/* Định dạng cho phần thông tin avatar và tin nhắn */
+.message-item .message-sender,
+.message-item .message-text {
+    margin-right: 10px;
+}
+
+.message-timestamp {
+    color: #8b8b8b;
+    text-align: right;
+}
+
+.message-content {
+    margin-right: 15px;
+}
+
+/* Hiệu ứng hover cho tin nhắn */
+.message-item:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}

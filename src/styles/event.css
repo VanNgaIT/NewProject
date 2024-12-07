@@ -1,0 +1,96 @@
+/* Container của danh sách sự kiện */
+.event-list-container {
+    margin-left: 220px;
+    /* Đảm bảo không bị che khuất bởi sidebar */
+    padding: 20px;
+    background-color: #f4f7fc;
+    /* Màu nền nhẹ, dễ nhìn */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Bóng nhẹ để làm nổi bật container */
+}
+
+.event-list-container h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Danh sách sự kiện */
+.event-list-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.event-list-container ul li {
+    background-color: #ffffff;
+    /* Nền trắng cho mỗi item */
+    border: 1px solid #e1e4e8;
+    /* Viền mỏng sáng */
+    border-radius: 8px;
+    /* Bo góc cho từng item */
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Bóng nhẹ */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    /* Hiệu ứng hover */
+}
+
+/* Thêm màu nền khi hover vào mục sự kiện */
+.event-list-container ul li:hover {
+    transform: translateY(-5px);
+    /* Di chuyển lên khi hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    /* Tăng bóng khi hover */
+    background-color: #f1f8ff;
+    /* Màu nền thay đổi khi hover */
+}
+
+/* Tiêu đề sự kiện */
+.event-list-container ul li h3 {
+    font-size: 1.5rem;
+    color: #0073e6;
+    /* Màu xanh cho tiêu đề */
+    margin-bottom: 10px;
+}
+
+/* Thời gian, ngày tháng */
+.event-list-container ul li p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Địa điểm */
+.event-list-container ul li p:nth-child(3) {
+    color: #333;
+    font-weight: 500;
+}
+
+/* Nút "Xem chi tiết" */
+.event-list-container button {
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.event-list-container button:hover {
+    background-color: #005bb5;
+    transform: translateY(-2px);
+    /* Tạo hiệu ứng nhấn */
+}
+
+/* Thêm icon hoặc trang trí khác cho sự kiện nếu cần */
+.event-list-container ul li .icon {
+    font-size: 2rem;
+    color: #ff8c00;
+    /* Màu cam cho icon nếu có */
+    margin-right: 10px;
+}
